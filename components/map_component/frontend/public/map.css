@@ -1,118 +1,118 @@
 * {
-    padding: 0;
-    margin: 0;
-    outline: 0;
-    overflow: hidden;
-    font-family: sans-serif;
-  }
-  html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-  #zoom {
-    width: 100%;
-    height: 100%;
-    transform-origin: 0px 0px;
-    transform: scale(1.01) translate(0px, 0px);
-    cursor: grab;
-  }
-  div#zoom > img {
-    width: 100%;
-    height: 100%;
-  }
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#zoom {
+  width: 100%;
+  height: 100%;
+  transform-origin: 0px 0px;
+  transform: scale(1.01) translate(0px, 0px);
+  cursor: grab;
+}
+div#zoom > img {
+  width: 100%;
+  height: 100%;
+}
 
-  .indicator {
-    position: absolute;
-    padding-right: 10px;
-  }
+.indicator {
+  position: absolute;
+  padding-right: 10px;
+}
 
-  .dot {
-    height: 15px;
-    width: 15px;
-    background-color: rgb(196, 29, 29);
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-  }
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(196, 29, 29);
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
 
-  .kill_dot {
-    background-color: rgb(3, 151, 171);
-  }
+.kill_dot {
+  background-color: rgb(3, 151, 171);
+}
 
-  .death_dot {
-    background-color: rgb(240, 50, 50);
-  }
+.death_dot {
+  background-color: rgb(240, 50, 50);
+}
 
-  .assist_dot {
-    background-color: green;
-  }
+.assist_dot {
+  background-color: green;
+}
 
-  .dragon_dot {
-    background-color: gold;
-  }
+.dragon_dot {
+  background-color: gold;
+}
 
-  .herald_dot {
-    background-color: blueviolet;
-  }
+.herald_dot {
+  background-color: brown;
+}
 
-  .baron_dot {
-    background-color: purple;
-  }
+.baron_dot {
+  background-color: purple;
+}
 
-  .building_dot {
-    background-color: steelblue;
-  }
+.building_dot {
+  background-color: white;
+}
 
-  .clicked-dot {
-    background-color: rgb(205, 250, 250);
-    z-index: 6;
-  }
+.clicked-dot {
+  background-color: rgb(205, 250, 250);
+  z-index: 6;
+}
 
-  .game0 {
-    border-radius: 0%;
-  }
+.game0 {
+  border-radius: 0%;
+}
 
-  .game1 {
-    height: 14px;
-    width: 14px;
-    transform:rotate(45deg);
-  }
+.game1 {
+  height: 14px;
+  width: 14px;
+  transform:rotate(45deg);
+}
 
-  .game2 {
-    border-radius: 50%;
-  }
+.game2 {
+  border-radius: 50%;
+}
 
-  .game3 {
-    height: 18px;
-    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-  }
+.game3 {
+  height: 18px;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
 
-  .game4 {
-    height: 18px;
-    width: 18px;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  }
+.game4 {
+  height: 18px;
+  width: 18px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
 
-  .ind-tooltip {
-    height: 150px;
-    width: 320px;
-    background-color: lightgrey;
-    position: relative;
-    left: 10px;
-    top: 10px;
-    border-radius: 10px;
-    opacity: 0.75;
-    padding: 10px;
-    font-size: 17px;
-    color: black;
-    z-index: 5;
-  }
+.ind-tooltip {
+  height: 150px;
+  width: 320px;
+  background-color: lightgrey;
+  position: relative;
+  left: 10px;
+  top: 10px;
+  border-radius: 10px;
+  opacity: 0.75;
+  padding: 10px;
+  font-size: 17px;
+  color: black;
+  z-index: 5;
+}
 
-  .tooltip-header {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
+.tooltip-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}

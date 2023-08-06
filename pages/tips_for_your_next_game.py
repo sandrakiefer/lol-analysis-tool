@@ -7,7 +7,7 @@ import os
 st.set_page_config(layout="wide")
 
 API_KEY = st.secrets["api_key"]
-AMOUNT_GAMES = 10
+AMOUNT_GAMES = 5
 
 root_dir = os.path.dirname(os.path.abspath(__file__))
 minions_image = Image.open(os.path.join(root_dir, "../images/minions.jpeg"))

@@ -273,7 +273,7 @@ export const MyD3Component = (props: IProps) => {
 
 class ChartComponent extends StreamlitComponentBase {
   public render = (): ReactNode => {
-    return <MyD3Component data={this.props.args["jsonData"]} width = {this.props.width} colour={this.props.args["chartColour"]}/>;
+    return <MyD3Component data={this.props.args["jsonData"]} width = {900} colour={this.props.args["chartColour"]}/>;
   };
 }
 

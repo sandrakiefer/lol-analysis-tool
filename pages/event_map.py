@@ -346,11 +346,12 @@ if 'puuid' in st.session_state:
             game_array = [game1, game2, game3, game4, game5]
 
         with col2:
-            events = st.multiselect("Select type of event to display", ["Kills", "Deaths", "Assists", "Dragons", "Heralds", "Barons", "Buildings"], ["Kills", "Deaths", "Dragons"])
+            events = st.multiselect("Select type of event to display", ["Kills 🔵", "Deaths 🔴", "Assists 🟢", "Dragons 🟡", "Heralds 🟤", "Barons 🟣", "Buildings ⚪"], ["Kills 🔵", "Deaths 🔴", "Dragons 🟡"])
+            map_events = [event[:-2] for event in events]
             container = st.container()
             time_range = st.slider('Select event time frame', 0, 60, (default_tr_low, default_tr_high))
             with container:
-                _map_component(x_coords=x_vals, y_coords=y_vals, killer_champ=killer_champ, victim_champ=victim_champ, assist_champs=assist_champs, event_type=event_type, events=events, event_time=event_time, time_range=time_range, game_index=game_index, game_array=game_array, key="foo")
+                _map_component(x_coords=x_vals, y_coords=y_vals, killer_champ=killer_champ, victim_champ=victim_champ, assist_champs=assist_champs, event_type=event_type, events=map_events, event_time=event_time, time_range=time_range, game_index=game_index, game_array=game_array, key="foo")
 
 else:
     st.write("please enter your username on the login screen")
